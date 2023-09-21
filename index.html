@@ -18,20 +18,64 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
 
+    <!-- icon -->
+
+    <script src="https://kit.fontawesome.com/979eb47919.js" crossorigin="anonymous"></script>
+
+    <!-- customizing -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
     <style>
         .manrope-fonts {
             font-family: 'Manrope', sans-serif;
         }
+
+        /*'bg-gradient-to-r from-[#F00] to-[#FF8938]' */
     </style>
 
 </head>
 
 <body class="manrope-fonts">
 
+    <!-- banner -->
     <header>
-        <h1>this file setup</h1>
-
-
+        <div class="hero py-16">
+            <div class="hero-content flex-col lg:flex-row-reverse">
+                <div class="flex-1 justify-center">
+                    <img src="./images/banner.png" class="" />
+                    <div
+                        class="flex gap-3 items-center rounded-lg shadow-lg p-4 w-60 relative bg-white -top-8 md:-top-24 left-20">
+                        <i class="fa-solid fa-star text-amber-400 text-4xl "></i>
+                        <div>
+                            <h3 class="text-3xl font-extrabold">5.00</h3>
+                            <p>Trust Pilot Ratings</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1">
+                    <h1 class="text-5xl md:text-7xl font-extrabold">It's good <br>
+                        tea time at The <br>
+                        Tea House</h1>
+                    <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
+                        exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button
+                        class="btn btn-primary bg-gradient-to-r from-[#F00] to-[#FF8938] border-none text-white">Explore
+                        More
+                        <img src="./images/arrow.png" alt="">
+                    </button>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main>
